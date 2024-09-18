@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+import GithubLogo from "../assets/images/github-logo.svg";
+import LinkedInLogo from "../assets/images/linkedin-logo.svg";
+---
+
+<header>
+  <nav class="py-5">
+    <div class="w-full flex justify-between">
+      <a class="font-extrabold text-lg lg:text-2xl" href="/">
+        <h2>Oscar Molinar</h2>
+      </a>
+      <div class="flex gap-2">
+        <a href="https://github.com/oscarenriqq" target="_blank">
+          <Image
+            src={GithubLogo}
+            loading="eager"
+            alt="Github Logo"
+            class="w-5"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/oscar-molinar-0296/"
+          target="_blank"
+        >
+          <Image
+            src={LinkedInLogo}
+            loading="eager"
+            alt="LinkedIn Logo"
+            class="w-5"
+          />
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>

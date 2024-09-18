@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Fira Code Regular */
+@font-face {
+    font-family: 'Fira Code';
+    src: url('/fonts/static/FiraCode-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fira Code Bold */
+@font-face {
+    font-family: 'Fira Code';
+    src: url('/fonts/static/FiraCode-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Fira Code';
+}
+
+@layer base {
+    p {
+        @apply text-gray-600;
+    }
+
+    small {
+        @apply text-gray-400 text-xs;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply text-slate-800;
+    }
+}

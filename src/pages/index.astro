@@ -1,0 +1,27 @@
+---
+import LatestsPosts from "../components/LatestsPosts.astro";
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import PersonalImage from "../assets/images/square-om.webp";
+---
+
+<Layout title="Oscar Molinar: Blog Personal">
+  <div class="flex gap-5 items-center">
+    <div class="w-20 md:w-1/12">
+      <Image
+        src={PersonalImage}
+        alt="Oscar Molinar"
+        class="w-full rounded-full shadow-md"
+        loading="eager"
+      />
+    </div>
+    <div class="flex flex-col items-start gap-1">
+      <h1 class="font-bold text-2xl lg:text-5xl">oscarmolinar.dev</h1>
+      <p class="text-xs md:text-sm">
+        Explorando ideas, compartiendo historias.
+      </p>
+    </div>
+  </div>
+  <div class="mt-12"></div>
+  <LatestsPosts />
+</Layout>
