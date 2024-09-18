@@ -9,7 +9,7 @@ description: "Esta es una entrada de ejemplo para demostrar el uso de Frontmatte
 slug: "post-1"
 ---
 
-![Imagen de mi primera entrada](../../assets/images/landscape.jpg)
+![Imagen de mi primera entrada](../../assets/images/astro.jpg)
 
 Hola mundo en PHP
 ```php
