@@ -1,6 +1,6 @@
 ---
 title: "Mi segunda Entrada en el Blog"
-date: "2024-04-27"
+date: "2024-04-30"
 tags:
   - Astro
   - Frontmatter
