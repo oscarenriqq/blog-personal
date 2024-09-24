@@ -6,12 +6,12 @@ import Avatar from "../assets/images/om-avatar-bgTransparent.svg";
 ---
 
 <Layout title="Oscar Molinar: Blog Personal">
-  <div class="flex gap-5 items-center">
-    <div class="w-20 md:w-1/10">
+  <div class="flex gap-2 items-center">
+    <div>
       <Image
         src={Avatar}
         alt="Oscar Molinar"
-        class="w-full rounded-full shadow-md bg-blue-500"
+        class="w-12 md:w-14 rounded-full shadow-md bg-blue-500"
         loading="lazy"
       />
     </div>
@@ -22,6 +22,29 @@ import Avatar from "../assets/images/om-avatar-bgTransparent.svg";
       </p>
     </div>
   </div>
-  <div class="mt-12"></div>
+  <div class="py-8">
+    <div class="flex flex-col gap-3 text-sm leading-relaxed">
+      <p
+        x-data="{
+            date_start: new Date('2018-01-01'),
+            yearsOfExperience() {
+                return Math.abs(new Date().getFullYear() - this.date_start.getFullYear()) 
+            } 
+        }"
+      >
+        ¡Hola! Soy Oscar Molinar, desarrollador de software ubicado en Panamá
+        con más de
+        <span x-text="yearsOfExperience"></span> años de experiencia.
+      </p>
+      <p>
+        Este espacio está dedicado a compartir proyectos, artículos o ideas que
+        puedan ser útiles para la comunidad. Si encuentras algo útil para tí,
+        por favor, déjame un <a
+          class="underline decoration-dotted underline-offset-4"
+          href="mailto:oscarmolinar96@gmail.com">mensaje</a
+        >. Me encataría poder comunicarnos :)
+      </p>
+    </div>
+  </div>
   <LatestsPosts />
 </Layout>

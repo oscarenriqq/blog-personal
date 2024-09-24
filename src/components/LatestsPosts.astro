@@ -6,12 +6,17 @@ const allPosts = await getCollection("blog");
 const sortedPosts = allPosts.sort(
   (a, b) => new Date(b.data.date) - new Date(a.data.date)
 );
-
-console.log(sortedPosts);
 ---
 
 <div>
-  <h2 class="text-xl font-bold">Artículos</h2>
+  <header class="flex justify-between items-center">
+    <h2 class="text-xl font-bold">Artículos</h2>
+    <a
+      href="/blog"
+      class="underline decoration-dotted underline-offset-4 text-sm"
+      >Ver todos</a
+    >
+  </header>
   <div class="flex flex-col gap-8 mt-2">
     {
       sortedPosts.map((post) => (
