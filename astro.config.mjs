@@ -4,11 +4,11 @@ import tailwind from '@astrojs/tailwind';
 
 import alpinejs from '@astrojs/alpinejs';
 
+import partytown from '@astrojs/partytown';
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    tailwind(),
-    alpinejs()],
+  integrations: [tailwind(), alpinejs(), partytown()],
   markdown: {
     syntaxHighlight: 'shiki',
     shikiConfig: {
