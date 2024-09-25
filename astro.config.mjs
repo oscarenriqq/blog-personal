@@ -6,13 +6,20 @@ import alpinejs from '@astrojs/alpinejs';
 
 import partytown from '@astrojs/partytown';
 
+import sitemap from '@astrojs/sitemap';
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), alpinejs(), partytown({
-    config: {
-      forward: ["dataLayer.push"],
-    },
-  })],
+  site: 'https://oscarmolinar.dev',
+  integrations: [
+    tailwind(),
+    alpinejs(),
+    partytown({
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
+    sitemap()],
   markdown: {
     syntaxHighlight: 'shiki',
     shikiConfig: {
