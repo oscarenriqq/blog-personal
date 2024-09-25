@@ -1,0 +1,17 @@
+[
+    {
+        "title": "CommitGrow",
+        "description": "Aplicación para gestionar el cumplimiento de hábitos utilizando Todoist.",
+        "url": "https://commitgrow.oscarmolinar.dev",
+        "url_repository": "https://github.com/oscarenriqq/commitgrow.xyz",
+        "image": "/src/assets/images/commitgrow_screenshot.png",
+        "datePublished": "2024-09-25",
+        "tags": [
+            "Laravel",
+            "Livewire",
+            "Alpinejs",
+            "Tailwindcss",
+            "PHP"
+        ]
+    }
+]
