@@ -8,7 +8,11 @@ import partytown from '@astrojs/partytown';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), alpinejs(), partytown()],
+  integrations: [tailwind(), alpinejs(), partytown({
+    config: {
+      forward: ["dataLayer.push"],
+    },
+  })],
   markdown: {
     syntaxHighlight: 'shiki',
     shikiConfig: {
