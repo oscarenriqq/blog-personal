@@ -41,3 +41,29 @@ body {
         @apply text-slate-800;
     }
 }
+
+.prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::before,
+.prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::after {
+    content: "";
+}
+
+.prose :where(blockquote p:first-of-type):not(:where([class~="not-prose"], [class~="not-prose"] *))::before,
+.prose :where(blockquote p:first-of-type):not(:where([class~="not-prose"], [class~="not-prose"] *))::after {
+    content: "";
+}
+
+code:not(pre code) {
+    @apply bg-slate-50 rounded p-1;
+}
+
+.important-content {
+    @apply bg-red-50 text-red-800 p-5 rounded-lg;
+}
+
+.important-content::before {
+    content: "⚠️ ";
+}
+
+[x-cloak] {
+    display: none !important;
+}
