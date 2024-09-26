@@ -5,7 +5,7 @@ tags:
   - Alpine.js
   - Javascript
 description: "Conoce Alpine.js, una opción rápida y potente para agregar interactividad a tus aplicaciones."
-slug: "alpinejs-framework-javascript"
+slug: "introduction-to-javascript-framework-alpinejs"
 ---
 
 ![Imagen de Alpine.js](../../assets/images/alpinejs_blog_image.png)
