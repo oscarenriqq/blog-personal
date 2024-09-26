@@ -1,5 +1,5 @@
 ---
-title: "Alpine.js - Ligero y potente framework de JavaScript"
+title: "Alpine.js - Ligero y Potente Framework de JavaScript"
 date: "2024-09-25"
 tags:
   - Alpine.js
